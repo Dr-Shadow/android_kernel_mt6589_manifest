@@ -15,5 +15,6 @@
   <project path="ramdisk" name="Dr-Shadow/ramdisk" remote="bb" />
   <project path="toolchain/arm-eabi-4.8" name="Dr-Shadow/arm-eabi-4.8" />
   <project path="mtk-tools" name="Dr-Shadow/mtk-tools" />
+  <project path="scripts" name="Dr-Shadow/android_kernel_mt6589_scripts" />
 
 </manifest>
