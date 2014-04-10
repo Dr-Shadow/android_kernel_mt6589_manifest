@@ -1,0 +1,22 @@
+Android_kernel_mt6589 Manifest
+========
+
+A manifest for building kernel for MT6589 platform
+
+repo init -u https://github.com/Dr-Shadow/android_kernel_mt6589_manifest.git -b master
+
+Master branch can be replaced by some others :
+	master will set kernel repo to branch master		  -> build for Faea F2S
+	r819-release will set kernel repo to branch r819-release  -> build for Oppo R819
+
+Actual components grabbed from repos :
+	manifest
+	sabermod toolchain 4.8.3 (compiled with default options)
+	android_kernel_mt6589 source
+	ramdisks (see README https://bitbucket.org/Dr-Shadow/ramdisk/src)
+	mtk-tools forked from https://github.com/bgcngm/mtk-tools
+
+Dependencies :
+	ccache (used by default)
+	Perl v5.14+
+	Everything for kernel build

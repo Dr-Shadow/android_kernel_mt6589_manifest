@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="gh"
+           fetch="https://github.com/" />
+  <remote  name="bb"
+           fetch="https://bitbucket.org/" />
+  <default revision="master"
+           remote="gh"
+           sync-j="4"
+           sync-c="true" />
+
+  <project path="manifest" name="Dr-Shadow/android_kernel_mt6589_manifest" />
+  <project path="kernel" name="Dr-Shadow/android_kernel_mt6589"  />
+  <project path="ramdisk" name="Dr-Shadow/ramdisk" remote="bb" />
+  <project path="toolchain/arm-eabi-4.8" name="Dr-Shadow/arm-eabi-4.8" />
+  <project path="mtk-tools" name="Dr-Shadow/mtk-tools" />
+
+</manifest>
