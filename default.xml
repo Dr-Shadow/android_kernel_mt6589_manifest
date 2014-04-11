@@ -11,7 +11,7 @@
            sync-c="true" />
 
   <project path="manifest" name="Dr-Shadow/android_kernel_mt6589_manifest" />
-  <project path="kernel" name="Dr-Shadow/android_kernel_mt6589"  />
+  <project path="kernel" name="Dr-Shadow/android_kernel_mt6589" revision="devel-upstream" />
   <project path="ramdisk" name="Dr-Shadow/ramdisk" remote="bb" />
   <project path="toolchain/arm-eabi-4.8" name="Dr-Shadow/arm-eabi-4.8" />
   <project path="mtk-tools" name="Dr-Shadow/mtk-tools" />
