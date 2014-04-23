@@ -6,8 +6,15 @@ A manifest for building kernel for MT6589 platform
 repo init -u https://github.com/Dr-Shadow/android_kernel_mt6589_manifest.git -b master
 
 Master branch can be replaced by some others :
-	master will set kernel repo to branch master		  -> build for Faea F2S
-	r819-release will set kernel repo to branch r819-release  -> build for Oppo R819
+	master will set kernel to branch master		       -> 3.4.5 for Faea F2S
+	r819-release will set kernel to branch r819-release    -> 3.4.5 for Oppo R819
+	devel-upstream will set kernel to branch devel-release -> 3.4.67 for Faea F2S
+
+More info :
+	3.4.5 for MT6589 is not really a base 3.4.5 with cherry-picked commits
+		but a 3.4.0
+	3.4.67 is kernel with all changes on kernel/common from AOSP source
+		there is some issues actually with pmem/ion but it should boot
 
 Actual components grabbed from repos :
 	manifest
@@ -17,6 +24,7 @@ Actual components grabbed from repos :
 	mtk-tools forked from https://github.com/bgcngm/mtk-tools
 
 Dependencies :
+	Java
 	ccache (used by default)
 	Perl v5.14+
 	Everything for kernel build
