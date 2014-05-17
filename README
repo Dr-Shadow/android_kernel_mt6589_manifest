@@ -9,12 +9,16 @@ Master branch can be replaced by some others :
 	master will set kernel to branch master		       -> 3.4.5 for Faea F2S
 	r819-release will set kernel to branch r819-release    -> 3.4.5 for Oppo R819
 	devel-upstream will set kernel to branch devel-release -> 3.4.67 for Faea F2S
+	r819-base will set kernel to branch r819-base
+		  will set toolchain to arm-androideabi-4.6    -> 3.4.5 for Oppo R819
 
 More info :
 	3.4.5 for MT6589 is not really a base 3.4.5 with cherry-picked commits
 		but a 3.4.0
 	3.4.67 is kernel with all changes on kernel/common from AOSP source
 		there is some issues actually with pmem/ion but it should boot
+	r819-base is kernel from oppo source and with small modifications on build
+		scripts
 
 Actual components grabbed from repos :
 	manifest
